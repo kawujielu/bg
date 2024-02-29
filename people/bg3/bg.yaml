@@ -1,0 +1,24 @@
+account1:   #账户配置信息
+    - bitgetUsdtSwap
+    - bg_8f2da971f42ca05f2f7892f352489f4e
+    - a9b3dee20e9db654f6788c0c1f1643a8cc59002eeb94a30f392029af5badb56c//make money
+account2:   #账户配置信息
+    - binanceUsdtSwapHft
+    - a 
+    - a 
+---
+config:
+  exc: bitgetUsdtSwap                  # 内盘交易所
+  hedge_exchange: binanceUsdtSwapHft   # 外盘交易所
+  legalCoin: usdt
+  contract_unit: 1                  # 合约单位,1张多少个币
+  symbol: people/usdt                # 内盘交易对
+  hedge_symbol: people/usdt          # 外盘交易对
+  dataClientPort: 9400004           # 9500005
+  fund_ratio: 0.01                  # 每次下单资金占用比例
+  taker_fee: 0.0006                 # 内盘taker手续费
+  init_bace_quote: 250              # 初始资金
+  bal_warning: 0.95                 # 报警比例
+  split: 0.005                      # 风控下单滑点
+  minAmt: 6                         # 最小下单金额
+  loopTime: 0.005                   # 每次循环睡眠时间，秒
